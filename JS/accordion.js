@@ -6,6 +6,4 @@ contents.forEach((elem)=> {
     title.addEventListener('click', () => {
         descr.classList.toggle('active')
     })
-
-    // console.dir(descr.classList)
 })

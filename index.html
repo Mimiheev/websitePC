@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Собираем ПК</title>
-    <script src="./JS/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+    <script src="JS/accordion.js" defer></script>
+    <script src="JS/modal.js" defer></script>
+    <script src="JS/smoothScroll.js" defer></script>
+
 </head>
 
 <body>
@@ -19,9 +23,9 @@
             </a>
             <div class="header__menu">
                 <nav class="header__nav block-center-horis">
-                    <a href="#">Чем занимаемся</a>
-                    <a href="#">Процесс работы</a>
-                    <a href="#">Команда</a>
+                    <a href="#work">Чем занимаемся</a>
+                    <a href="#process">Процесс работы</a>
+                    <a href="#command">Команда</a>
                 </nav>
                 <button class="button header__button">Зайти в кабинет</button>
             </div>
@@ -78,7 +82,7 @@
                             <span class="course__number">400 000₽</span>
                         </div>
                         <div class="course__progress-element">
-                            <progress min="0" max="1000000" value="400000" />
+                            <progress min="0" max="1000000" value="400000"></progress>
                         </div>
                         <div class="course__progress-minmax">
                             <span>0₽</span>
@@ -89,7 +93,7 @@
             </div>
         </div>
 
-        <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <div class="work__wrap">
                     <div class="work__img">
@@ -106,7 +110,7 @@
             </div>
         </section>
 
-        <section class="process">
+        <section class="process" id="process">
             <div class="container">
                 <div class="process__wrap">
                     <div class="process__title block-center-horis">
@@ -204,7 +208,7 @@
             </div>
         </section>
 
-        <section class="command">
+        <section class="command" id="command">
             <div class="container">
                 <div class="process__title command__title">
                     <div class="process__img command__img-title">
