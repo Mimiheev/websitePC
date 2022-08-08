@@ -19,7 +19,7 @@ const timer = () => {
 
     const updateTimer = () => {
         const date = new Date()
-        const dateDeadeline = new Date('27 april 2022').getTime()
+        const dateDeadeline = new Date('25 august 2022').getTime()
         const timerRemaining = (dateDeadeline - date) / 1000
 
         const days = Math.floor(timerRemaining / 60 / 60 / 24)
